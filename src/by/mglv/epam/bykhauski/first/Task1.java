@@ -105,4 +105,51 @@ public class Task1 {
         }
     }
 
-} // конец
+    // Ветвления
+
+    // #1 Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
+    //    он прямоугольным.
+
+    public static void task7 (){
+        System.out.println("Enter two angles of triangle: ");
+        System.out.println(" 1:  ");
+        int x1=0;
+        boolean check=true;
+        while (check) {
+            x1 = (int)enterVar();
+            if (x1 > 0) {
+                check = false;
+            } else {
+                System.out.println("angle  must be > 0 , reenter please ");
+            }
+        }
+
+        System.out.println(" 2:  ");
+        int x2=0;
+        check=true;
+        while (check) {
+            x2 = (int)enterVar();
+            if (x2 > 0) {
+                check = false;
+            } else {
+                System.out.println("angle  must be > 0 , reenter please ");
+            }
+        }
+
+        if ((x1+x2)<180) {
+            System.out.println("Triangle is exist ");
+            if (x1==90 || x2==90 || (x1+x2)==90) {
+                System.out.println("The triangle is rectangular");
+            }
+        } else {System.out.println("Triangle is not exist ");}
+    }
+
+    // #2 Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
+    //    он прямоугольным.
+
+    public static void task8 (){
+
+    }
+
+
+}
