@@ -144,12 +144,33 @@ public class Task1 {
         } else {System.out.println("Triangle is not exist ");}
     }
 
-    // #2 Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
+    // #2 Найти max{min(a, b), min(c, d)}.
     //    он прямоугольным.
-
     public static void task8 (){
-
+        System.out.println("Enter a,b,c,d for expressions: max{min(a, b), min(c, d)} ");
+        System.out.println(" a= ");
+        double a=enterVar();
+        System.out.println(" b= ");
+        double b=enterVar();
+        System.out.println(" c= ");
+        double c=enterVar();
+        System.out.println(" d= ");
+        double d=enterVar();
+        double min1=0;
+        double min2=0;
+        double rezultMax=0;
+        if (a<b) {min1=a;} else {min1=b;}
+        if (c<d) {min2=c;} else {min2=d;}
+        rezultMax = min1<min2? min2:min1;
+        System.out.println("rezult is: " + rezultMax);
     }
 
 
-}
+
+
+
+
+
+
+
+} // end class
