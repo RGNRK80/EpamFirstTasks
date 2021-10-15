@@ -172,39 +172,41 @@ public class Task1 {
 
     // #3 Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). Определить, будут ли они расположены на одной прямой.
 
-    public static void task9 (){
+    public static void task9 () {
         System.out.println("Enter А(х1,у1), В(х2,у2) и С(х3,у3) (points must be different): ");
         System.out.println(" x1= ");
-        double x1=enterVar();
+        double x1 = enterVar();
         System.out.println(" y1= ");
-        double y1=enterVar();
+        double y1 = enterVar();
         System.out.println(" x2= ");
-        double x2=enterVar();
+        double x2 = enterVar();
         System.out.println(" у2= ");
-        double y2=enterVar();
+        double y2 = enterVar();
         System.out.println(" x3= ");
-        double x3=enterVar();
+        double x3 = enterVar();
         System.out.println(" у3= ");
-        double y3=enterVar();
+        double y3 = enterVar();
 
-        // сделать чек  - если 2 точки в 1 стоят - выражение true
-
-        // используем равенство тангенсов углов по отношению к первой точке (не работает если точки в 1 точке)
-        if ((x3 - x1) / (x2 - x1) - (y3 - y1) / (y2 - y1)==0) {
-            System.out.println("the points are located on 1 straight line");
-        } else {
-            System.out.println("the points are not located on 1 straight line");
+        boolean chekPintsToDifferent = true;
+        if ((x1 == x2 && y1 == y2) || (x2 == x3 && y2 == y3) || (x3 == x1 && y3 == y1)) {
+            chekPintsToDifferent = false;
+            System.out.println("Points must be different, because in other case it always located on 1 strait line ");
         }
 
+        if (chekPintsToDifferent == true) {
+            if ((x3 - x1) / (x2 - x1) - (y3 - y1) / (y2 - y1) == 0) {
+                System.out.println("the points are located on 1 straight line");
+            } else {
+                System.out.println("the points are not located on 1 straight line");
+            }
 
 
-
-
+        }
     }
 
     // #4 Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через
     //отверстие
-    public static void task10 (){
+    public static void task10 () {
 
     }
 
