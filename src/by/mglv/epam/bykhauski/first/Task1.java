@@ -60,7 +60,7 @@ public class Task1 {
     }
 
 
-    //Вычислить значение выражения по формуле (все переменные принимают действительные значения):
+    // #3. Вычислить значение выражения по формуле (все переменные принимают действительные значения):
     //(𝑠𝑖𝑛 𝑥 + 𝑐𝑜𝑠 𝑦)/(𝑐𝑜𝑠 𝑥 − 𝑠𝑖𝑛 𝑦) ∗ 𝑡𝑔 𝑥𝑦
     public static void task3 (){
         System.out.println("Enter the parameters X and Y");
@@ -207,6 +207,24 @@ public class Task1 {
     // #4 Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через
     //отверстие
     public static void task10 () {
+        System.out.println("Enter dimensions of hole A , B : ");
+        System.out.println(" A= ");
+        double a = enterVar();
+        System.out.println(" B= ");
+        double b = enterVar();
+        System.out.println("Enter dimensions of Brick x,y,z: ");
+        System.out.println(" x= ");
+        double x = enterVar();
+        System.out.println(" у= ");
+        double y = enterVar();
+        System.out.println(" z= ");
+        double z = enterVar();
+
+
+
+
+
+
 
     }
 
