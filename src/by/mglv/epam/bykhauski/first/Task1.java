@@ -171,8 +171,9 @@ public class Task1 {
 
 
     // #3 Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). Определить, будут ли они расположены на одной прямой.
+
     public static void task9 (){
-        System.out.println("Enter А(х1,у1), В(х2,у2) и С(х3,у3): ");
+        System.out.println("Enter А(х1,у1), В(х2,у2) и С(х3,у3) (points must be different): ");
         System.out.println(" x1= ");
         double x1=enterVar();
         System.out.println(" y1= ");
@@ -185,8 +186,11 @@ public class Task1 {
         double x3=enterVar();
         System.out.println(" у3= ");
         double y3=enterVar();
-        // используем равенство тангенсов углов по отношению к первой точке
-        if ((y2-y1)/(x2-x1)*(x3-x1)/(y3-y1)==1) {
+
+        // сделать чек  - если 2 точки в 1 стоят - выражение true
+
+        // используем равенство тангенсов углов по отношению к первой точке (не работает если точки в 1 точке)
+        if ((x3 - x1) / (x2 - x1) - (y3 - y1) / (y2 - y1)==0) {
             System.out.println("the points are located on 1 straight line");
         } else {
             System.out.println("the points are not located on 1 straight line");
@@ -198,7 +202,11 @@ public class Task1 {
 
     }
 
+    // #4 Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через
+    //отверстие
+    public static void task10 (){
 
+    }
 
 
 
