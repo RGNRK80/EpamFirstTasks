@@ -156,18 +156,47 @@ public class Task1 {
         double c=enterVar();
         System.out.println(" d= ");
         double d=enterVar();
+
+        //ver.1
         double min1=0;
         double min2=0;
         double rezultMax=0;
         if (a<b) {min1=a;} else {min1=b;}
         if (c<d) {min2=c;} else {min2=d;}
         rezultMax = min1<min2? min2:min1;
-        System.out.println("rezult is: " + rezultMax);
+        System.out.println("vers.1 - rezult is: " + rezultMax);
+        //ver.2
+        System.out.println("vers.2 - rezult is: " + Math.max(Math.min(a,b),Math.min(c,d)));
     }
 
 
+    // #3 Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). Определить, будут ли они расположены на одной прямой.
+    public static void task9 (){
+        System.out.println("Enter А(х1,у1), В(х2,у2) и С(х3,у3): ");
+        System.out.println(" x1= ");
+        double x1=enterVar();
+        System.out.println(" y1= ");
+        double y1=enterVar();
+        System.out.println(" x2= ");
+        double x2=enterVar();
+        System.out.println(" у2= ");
+        double y2=enterVar();
+        System.out.println(" x3= ");
+        double x3=enterVar();
+        System.out.println(" у3= ");
+        double y3=enterVar();
+        // используем равенство тангенсов углов по отношению к первой точке
+        if ((y2-y1)/(x2-x1)*(x3-x1)/(y3-y1)==1) {
+            System.out.println("the points are located on 1 straight line");
+        } else {
+            System.out.println("the points are not located on 1 straight line");
+        }
 
 
+
+
+
+    }
 
 
 
