@@ -3,6 +3,6 @@ package by.mglv.epam.bykhauski.first;
 public class Main {
     public static void main(String[] args)
     {
-                Task1.task9();
+                Task1.task10();
     }
 }

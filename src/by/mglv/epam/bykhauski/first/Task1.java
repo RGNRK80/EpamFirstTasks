@@ -219,12 +219,11 @@ public class Task1 {
         double y = enterVar();
         System.out.println(" z= ");
         double z = enterVar();
-
-
-
-
-
-
+        if ((a>x && (b>y || b> z)) || (a>y && (b>x || b> z)) || (a>z && (b>y || b> x))) {
+            System.out.println(" the brick can pass through the hole");
+        } else {
+            System.out.println(" the brick can't pass through the hole");
+        }
 
     }
 
