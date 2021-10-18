@@ -227,6 +227,32 @@ public class Task1 {
 
     }
 
+    //#5. Вычислить значение функции:
+     public static void task11 () {
+        System.out.println(" x= ");
+        double x = enterVar();
+        double rezult=0;
+        if (x<=3) {
+            rezult=x*x-3*x+9;
+        } else {
+            rezult=1/(Math.pow(x,3)+6);
+        }
+         System.out.println("Rezult is: " + rezult);
+     }
+
+     //Циклы
+
+    // #1. Напишите программу, где пользователь вводит любое целое положительное число.
+    // А программа суммирует все числа от 1 до введенного пользователем числа.
+    public static void task12 () {
+        System.out.println(" x= ");
+        int x= (int)enterVar();
+        long rezult=0;
+        for (int i=0; i<=x; i++){
+            rezult+=i;
+            }
+        System.out.println("Rezult is: " + rezult);
+    }
 
 
 } // end class
