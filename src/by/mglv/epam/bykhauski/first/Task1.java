@@ -254,5 +254,30 @@ public class Task1 {
         System.out.println("Rezult is: " + rezult);
     }
 
+    // #2. Напишите программу, где пользователь вводит любое целое положительное число.
+    // Вычислить значения функции на отрезке [а,b] c шагом h:
+    public static void task13 () {
+        System.out.println("Enter dimensions of the segment a , b : ");
+        System.out.println(" a= ");
+        double a = enterVar();
+        System.out.println(" b= ");
+        double b = enterVar();
+        System.out.println(" enter step h ");
+        double h= enterVar();
+        double rezult=0;
+
+        for (double i=a; i<=b;i+=h ){
+            if (i > 2) {
+                rezult = i;
+                System.out.println(i);
+
+            } else {
+                rezult = -i;
+                System.out.println(i);
+
+            }
+
+        }
+    }
 
 } // end class
